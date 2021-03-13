@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 80px;
+        overflow: hidden;
+        display: block;
+        border: solid 1px gray;
+        padding: 2px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+      "
+    >
+      <marquee
+        behavior="scroll"
+        direction="up"
+        scrollamount="5"
+        style="
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          cursor: pointer;
+        "
+        onMouseOver="this.setAttribute('scrollamount', 0, 0);this.stop();"
+        OnMouseOut="this.setAttribute('scrollamount', 2, 0);this.start();"
+      >
+        <ul id="list">
+          <li id="1" style="margin-bottom: 80px">
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+          </li>
+          <li id="2" style="margin-bottom: 80px">
+            zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.
+          </li>
+        </ul>
+      </marquee>
+    </div>
+  </body>
+</html>
